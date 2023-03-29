@@ -18,4 +18,6 @@
 ### Home Page
 <img src="dist/img/home.png">
 
+### Data dari form yang ada dalam Session
+<img src="dist/img/dataform.png">
 

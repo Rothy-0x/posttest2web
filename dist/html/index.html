@@ -86,7 +86,7 @@
                         Junior Programmer & <span class="text-dark">Student Mulawarman University</span>
                     </h2>
                     <p class="font-medium text-secondary mb-10 leading-relaxed">
-                        Selamat Datang <span id="hello"></span> di Web Portfolio saya
+                        Selamat Datang <span id="hello" class=" text-base font-bold"></span> di Web Portfolio saya
                     </p>
                     <a href="#" class="text-base font-semibold bg-primary text-white py-3 px-8 rounded-full 
                     hover:shadow-lg hover:opacity-80 
@@ -383,7 +383,7 @@
 
                         <label for="countries"
                             class="block mb-2 text-base font-bold text-primary dark:text-primary">Pilih Angkatan</label>
-                        <select id="countries"
+                        <select id="angkatan"
                             class="bg-slate-200 rounded-md  text-gray-900 text-sm  focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-slate-200 dark:border-gray-300 dark:placeholder-gray-900 dark:text-gray-900 dark:focus:ring-primary dark:focus:outline-none dark:focus:border-primary dark:focus:ring-1">
                             <option selected>Pilih Angkatan</option>
                             <option value="2019">2019</option>
@@ -395,40 +395,51 @@
                     </div>
                     <div class="w-full px-4 ">
                         <p class="text-base text-primary font-bold mb-4">Jenis Kelamin</p>
-                        <input id="boy" type="radio" class="peer/boy">
+                        <input id="boy" type="radio" class="peer/boy" value="Laki-laki">
                         <label class=" text-slate-500 peer-checked/boy:text-dark pr-10">
                             Laki-Laki
                         </label>
-                        <input id="girl" type="radio" class="peer/girl ">
+                        <input id="girl" type="radio" class="peer/girl" value="Perempuan">
                         <label class=" text-slate-500 peer-checked/girl:text-dark">
                             Perempuan
                         </label>
                     </div>
                     <div class="w-full px-4 mb-8 pt-8">
-                        <p class="text-base text-primary font-bold mb-4">Mengirim File</p>
-                        <label class="block">
-                            <span class="sr-only">Choose profile photo</span>
-                            <input type="file" class="block w-full text-sm text-slate-500
-                            file:mr-4 file:py-2 file:px-4
-                            file:rounded-full file:border-0
-                            file:text-sm file:font-semibold
-                            file:bg-primary file:text-white
-                            hover:file:bg-opacity-70
-                            " />
-                        </label>
-                    </div>
-                    <div class="w-full px-4 mb-8">
-                        <label for="message" class="text-base text-primary font-bold">Pesan</label>
-                        <textarea type="text" id="email"
-                            class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32">
-                        </textarea>
-                    </div>
-                    <div class="w-full px-4">
-                        <button
-                            class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg hover:transition duration-500">Kirim</button>
+                        <p class="text-base text-primary font-bold mb-4">Status Pekerjaan</p>
+                        <div class="flex items-center mb-2">
+                            <input type="checkbox" value="bekerja" id="bekerja" name="pekerjaan[]"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500">
+                            <label for="default-checkbox" class="ml-2 text-base font-medium text-gray-900 "
+                                for="bekerja">Bekerja</label>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <input type="checkbox" value="mahasiswa" id="mahasiswa" name="pekerjaan[]"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500">
+                            <label for="checked-checkbox" class="ml-2 text-base font-medium text-gray-900"
+                                for="mahasiswa">Mahasiswa</label>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <input type="checkbox" value="siswa" id="siswa" name="pekerjaan[]"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500">
+                            <label for="checked-checkbox" class="ml-2 text-base font-medium text-gray-900"
+                                for="siswa">Siswa</label>
+                        </div>
                     </div>
                 </div>
-            </form>
+                <div class="w-full px-4 mb-8">
+                    <label for="message" class="text-base text-primary font-bold">Pesan</label>
+                    <textarea type="text" id="email"
+                        class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32">
+                        </textarea>
+                </div>
+
+                <div class="w-full px-4">
+                    <button
+                        class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg hover:transition duration-500"
+                        value="save" onclick="saveData()">Kirim</button>
+                </div>
+        </div>
+        </form>
         </div>
     </Section>
     <!-- Contact Section End -->
@@ -557,7 +568,7 @@
         </div>
     </footer>
     <!-- Footer Section End -->
-    <script src="dist/js/script.js"></script>
+    <script src="/dist/js/script.js"></script>
 </body>
 
 </html>

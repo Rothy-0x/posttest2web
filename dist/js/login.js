@@ -12,7 +12,7 @@ login.onclick = (e) => {
         // Melakukan perulangan pada array 
         for (let i = 0; i < users.length; i++) {
             if (username == users[i].username && password == users[i].password) {
-                localStorage.setItem("username-logged-in", users[i].firstName)
+                localStorage.setItem("username-logged-in", users[i].username)
                 window.location.href = ('index.html');
                 alert("Berhasil Login");
                 return;
