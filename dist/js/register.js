@@ -1,20 +1,18 @@
-const submit_button = document.querySelector(".button");
-submit_button.onclick = function (e) {
+const submit = document.getElementById("regis");
+submit.onclick = function (e) {
     e.preventDefault();
-    let fname = document.getElementById("fname").value;
-    let lname = document.getElementById("lname").value;
+    let uname = document.getElementById("username").value;
     let email = document.getElementById("email").value;
     let pass = document.getElementById("pass").value;
     let cpass = document.getElementById("cpass").value;
 
-    if (fname == "" || lname == "" || email == "" || pass == "" || cpass == "") {
+    if (uname == "" || email == "" || pass == "" || cpass == "") {
         alert("Harap isi semua kolom");
         return;
     }
 
     let user = {
-        firstName: fname,
-        lastName: lname,
+        username: uname,
         email: email,
         password: pass,
         cpassword: cpass
@@ -27,5 +25,5 @@ submit_button.onclick = function (e) {
     users.push(user);
     localStorage.setItem('users', JSON.stringify(users));
     alert("Berhasil Registrasi");
-    window.location.href = "index.html";
+    window.location.href = "login.html";
 }

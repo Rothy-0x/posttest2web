@@ -1,4 +1,4 @@
-const login = document.querySelector('login');
+const login = document.getElementById("login");
 login.onclick = (e) => {
     e.preventDefault();
     const username = document.getElementById("username").value;
@@ -13,7 +13,7 @@ login.onclick = (e) => {
         for (let i = 0; i < users.length; i++) {
             if (username == users[i].username && password == users[i].password) {
                 localStorage.setItem("username-logged-in", users[i].firstName)
-                window.location.href = "Beranda.html";
+                window.location.href = ('index.html');
                 alert("Berhasil Login");
                 return;
             }

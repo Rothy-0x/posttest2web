@@ -26,26 +26,42 @@
                                 </label>
                                 <input
                                     class="bg-gray-600 shadow appearance-none border rounded-xl w-full py-2 px-3 text-gray-200 leading-tight focus:outline-none"
-                                    id="username" type="text" placeholder="Username">
+                                    id="username" type="text">
                             </div>
-                            <div class="mb-6">
+                            <div class="mb-4">
+                                <label class="block text-gray-400 text-sm text-left font-bold mb-2" for="username">
+                                    Email
+                                </label>
+                                <input
+                                    class="bg-gray-600 shadow appearance-none border rounded-xl w-full py-2 px-3 text-gray-200 leading-tight focus:outline-none"
+                                    id="email" type="text">
+                            </div>
+                            <div class="mb-1">
                                 <label class="block text-gray-400 text-sm text-left font-bold mb-2" for="password">
                                     Password
                                 </label>
                                 <input
                                     class="bg-gray-600 shadow appearance-none border  rounded-xl w-full py-2 px-3 text-gray-200 mb-3 leading-tight focus:outline-none"
-                                    id="password" type="password" placeholder="********">
+                                    id="pass" type="password">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-400 text-sm text-left font-bold mb-2" for="password">
+                                    Confirm Password
+                                </label>
+                                <input
+                                    class="bg-gray-600 shadow appearance-none border  rounded-xl w-full py-2 px-3 text-gray-200 mb-3 leading-tight focus:outline-none"
+                                    id="cpass" type="password">
                             </div>
                             <div class="flex items-center justify-between">
                                 <button
                                     class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline "
-                                    type="button" id="login">
-                                    Sign In
+                                    type="button" id="regis">
+                                    Sign Up
                                 </button>
                             </div>
                             <div class=" pt-3 text-base text-gray-300 ">
-                                <p>Belum punya akun? <a href="/dist/html/register.html"
-                                        class="text-base text-blue-300  underline decoration-solid">Register Disini</a>
+                                <p>Sudah punya akun? <a href="/dist/html/login.html"
+                                        class="text-base text-blue-300  underline decoration-solid">Login Disini</a>
                                 </p>
                             </div>
                         </form>
@@ -54,7 +70,7 @@
             </div>
         </div>
     </div>
-    <script src="/dist/js/login.js"></script>
+    <script src="/dist/js/register.js"></script>
 </body>
 
 
