@@ -16,7 +16,7 @@
 <img src="dist/img/login22.png">
 
 ### Home Page
-<img src="dist/img/home.png">
+<img src="dist/img/1hom.png">
 
 ### Data dari form yang ada dalam Session
 <img src="dist/img/dataform.png">
