@@ -21,3 +21,5 @@
 ### Data dari form yang ada dalam Session
 <img src="dist/img/dataform.png">
 
+### Tampilan data dari form yang ada dalam session
+<img src="dist/img/formm.png">
