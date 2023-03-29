@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <title>Basic Login</title>
+</head>
+
+<body class="bg-gray-900">
+    <!-- A simple login page using TailwindCSS -->
+    <div class="h-screen grid grid-cols-1 content-center text-center">
+        <div>
+            <div class="flex justify-center">
+                <div class="w-full max-w-xs">
+                    <div class="bg-gray-700 shadow rounded-xl px-8 pt-6 pb-8 mb-4">
+                        <div class="mb-4">
+                            <h1 class="text-center text-2xl text-gray-200 font-bold">Login</h1>
+                        </div>
+                        <form class="">
+                            <div class="mb-4">
+                                <label class="block text-gray-400 text-sm text-left font-bold mb-2" for="username">
+                                    Username
+                                </label>
+                                <input
+                                    class="bg-gray-600 shadow appearance-none border rounded-xl w-full py-2 px-3 text-gray-200 leading-tight focus:outline-none"
+                                    id="username" type="text" placeholder="Username">
+                            </div>
+                            <div class="mb-6">
+                                <label class="block text-gray-400 text-sm text-left font-bold mb-2" for="password">
+                                    Password
+                                </label>
+                                <input
+                                    class="bg-gray-600 shadow appearance-none border  rounded-xl w-full py-2 px-3 text-gray-200 mb-3 leading-tight focus:outline-none"
+                                    id="password" type="password" placeholder="********">
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <button
+                                    class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline"
+                                    type="button" href="#">
+                                    Sign In
+                                </button>
+                            </div>
+                            <div class=" pt-3 text-base text-gray-300 ">
+                                <p>Belum punya akun? <a href="#" class="text-base text-blue-300  underline decoration-solid">Register Disini</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
