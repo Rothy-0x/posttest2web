@@ -21,3 +21,12 @@ humberger.addEventListener('click', function(){
     humberger.classList.toggle('humberger-active');
     navMenu.classList.toggle('hidden');
 });
+
+// Helo user
+
+const loggedInUsername = localStorage.getItem('username-logged-in')
+
+if (loggedInUsername){
+    const hello = document.getElementById('hello')
+    hello.innerHTML= localStorage.getItem('username-logged-in')
+}
